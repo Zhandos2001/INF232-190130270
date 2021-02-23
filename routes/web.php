@@ -30,11 +30,11 @@ Route::get('/Id', function () {
     return view('myId');
 });
 
-Route::get('/example-redirect', function () {
+Route::get('/example-redirect', function () { // Бұл жерде redirect view myinfo дағы жауапты қайтарады.
     return redirect("/info");
 });
 
 
-Route::get('/post1/{id}', function ($id) {
+Route::get('/post1/{id}', function ($id) {  
     return "Your is id: ".$id;
 });
