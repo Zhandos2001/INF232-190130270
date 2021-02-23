@@ -30,6 +30,10 @@ Route::get('/Id', function () {
     return view('myId');
 });
 
+Route::get('/HI', function () {
+    return view('last');
+});
+
 Route::get('/example-redirect', function () { // Бұл жерде redirect view myinfo дағы жауапты қайтарады.
     return redirect("/info");
 });
